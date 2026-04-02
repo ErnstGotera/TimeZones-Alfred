@@ -1,7 +1,5 @@
 source includes.sh
 
-set -x
-
 #Split previous argument
 OIFS=$IFS
 IFS=','
@@ -15,7 +13,7 @@ city="${arg[0]}"
 city=${city#*(}
 city=${city%)*}
 
-cat "$timezone_file" | grep -v "$city" > /tmp/zonelist.tmp
+grep -v "^${city}|" "$timezone_file" > /tmp/zonelist.tmp
 
 mv /tmp/zonelist.tmp "$timezone_file"
 

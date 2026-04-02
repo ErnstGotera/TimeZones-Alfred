@@ -1,10 +1,8 @@
 #!/usr/bin/env bash
 
-set -x
-
 # THESE VARIABLES MUST BE SET. SEE THE ONEUPDATER README FOR AN EXPLANATION OF EACH.
-readonly remote_info_plist='https://raw.githubusercontent.com/jaroslawhartman/TimeZones-Alfred/master/source/info.plist'
-readonly workflow_url='https://github.com/jaroslawhartman/TimeZones-Alfred/raw/master/TimeZones.alfredworkflow'
+readonly remote_info_plist='https://raw.githubusercontent.com/ErnstGotera/TimeZones-Alfred/master/source/info.plist'
+readonly workflow_url='https://github.com/ErnstGotera/TimeZones-Alfred/raw/master/TimeZones.alfredworkflow'
 readonly download_type='direct'
 readonly frequency_check="${1:-7}"
 

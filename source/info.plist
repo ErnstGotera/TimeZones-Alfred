@@ -379,7 +379,7 @@
 		</array>
 	</dict>
 	<key>createdby</key>
-	<string>Carl Smith (@CarlosNZ). Updated by Jarek Hartman</string>
+	<string>Carl Smith (@CarlosNZ). Updated by Jarek Hartman. Fixed by ernstgotera</string>
 	<key>description</key>
 	<string>A World Clock for Alfred</string>
 	<key>disabled</key>
@@ -1203,7 +1203,7 @@
 				<key>escaping</key>
 				<integer>0</integer>
 				<key>script</key>
-				<string>./oneUpdater.sh 0</string>
+				<string>./oneUpdater.sh 90</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
 				<key>scriptfile</key>
@@ -1221,7 +1221,7 @@
 	</array>
 	<key>readme</key>
 	<string># TimeZones
-Latst update: 25 February 2024
+Latest update: 1 April 2026
 
 # USAGE
 
@@ -1249,8 +1249,8 @@ Latst update: 25 February 2024
 
 All issues tracked on GitHub https://github.com/jaroslawhartman/TimeZones-Alfred/issues
 
-## 2.60
-25 February 2024
+## 2.61
+1 April 2024
 * README updates
 * #56 Libya flag update
 * App New icon and About Workflow in Markdown
@@ -1697,7 +1697,7 @@ Fixes after google deprecating their map APIs.
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>2.60</string>
+	<string>2.61</string>
 	<key>webaddress</key>
 	<string>https://jhartman.pl/tag/time-zones/</string>
 </dict>

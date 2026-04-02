@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-function migratePreferece() {
+function migratePreference() {
 	LEGACY_TZPREFS="$HOME/Library/Application Support/Alfred 3/Workflow Data/carlosnz.timezones"
 	[[ ! -d  "$TZPREFS" ]] && mkdir -p "$TZPREFS" 2>/dev/null
 	[[ ! -e "$timezone_file" ]] && cp "$LEGACY_TZPREFS/"* "$TZPREFS/" 2>/dev/null
@@ -37,16 +37,13 @@ TIMEZONE_PATH="$(getPreference 'TIMEZONE_PATH' "$TZPREFS" )"
 #Load path to the user's timezones.txt file.
 timezone_file="$TIMEZONE_PATH/timezones.txt"
 
-# echo "$TIMEZONE_PATH" >> /tmp/bzz
-# ls -l "$TIMEZONE_PATH" >> /tmp/bzz
-
 #Enable aliases for this script
 shopt -s expand_aliases
 
 #Case-insensitive matching
 shopt -s nocasematch
 
-migratePreferece
+migratePreference
 
 #Does the file actually exist?
 if [ ! -e "$timezone_file" ]; then

@@ -126,13 +126,10 @@ if [[ $time_search =~ ^[0-9:]+$ ]] ; then
         time_search=0${time_search}
     fi    
     
-    # pad seconds
+    # Strip colons and append "00" for seconds (e.g. "09:30" → "093000", "0930" → "093000")
     time_search=${time_search//:}00
 
-    #echo ${time_search} >> /tmp/alfred.txt
     timeToConvert=${time_search}
-
-    # todo this is weird
     time_search=
 else
     timeToConvert=$(date +%H%M)00
